@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'popins' sans-serif;
+}
+
+.active-hover {
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.active-hover:hover {
+    color: #F77D0A;
+}
+
+.hover {
+    background-color: #f8f9fa;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.hover:hover {
+    background-color: #2B2E4A;
+    color: white;
+}
+
+.hover2 {
+    background-color: #2B2E4A;
+    color: white;
+}
+
+.menu {
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(165, 165, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+
+    .hover,
+    .hover2 {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hover,
+    .hover2 {
+        width: 32.333333%;
+    }
+}
+
+.fotter-list a {
+    text-decoration: none;
+    color: #a5a5a5;
+}
+
+@media (min-width: 991px) {
+    .navbar-menu {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+    .toogle{
+        margin-top: 0px;
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+    .toogle{
+        margin-top: 0px;
+        display: block;
+    }
+    
+    .toogle a{
+        text-transform: uppercase;
+        text-decoration: none;
+        list-style: none;
+        padding: 20px;
+        transition: 0.3s;
+    }
+}
+
+.toogle a li:hover{
+    color: #F77D0A;
+}
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar-menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
